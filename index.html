@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thư mời lễ tốt nghiệp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lexend:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--ink:#4a4a4a;--blue:#4f8fe6;--soft:#bcd3f3;--band:#4f8fe6;--card:#ffffff;--line:#e3eaf5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1630;--ink:#e6eaf7;--blue:#7fb0f5;--soft:#2c4378;--band:#2d5fb5;--card:#16213f;--line:#2a3860;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1630;--ink:#e6eaf7;--blue:#7fb0f5;--soft:#2c4378;--band:#2d5fb5;--card:#16213f;--line:#2a3860;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"Lexend",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+.wrap{max-width:480px;margin:0 auto;position:relative}
+.dots{position:absolute;width:190px;height:230px;left:-30px;top:30px;background-image:radial-gradient(var(--blue) 2px,transparent 2.5px);background-size:9px 9px;-webkit-mask-image:radial-gradient(ellipse at 30% 40%,#000 20%,transparent 70%);mask-image:radial-gradient(ellipse at 30% 40%,#000 20%,transparent 70%);opacity:.55;pointer-events:none}
+.top{display:flex;align-items:center;gap:8px;padding:22px 24px 0;font-weight:600;letter-spacing:.04em;font-size:15px;position:relative}
+.top svg{width:26px;height:26px;fill:var(--blue)}
+.hero{text-align:center;padding:36px 20px 10px;position:relative}
+.eyebrow{font-weight:800;color:var(--blue);font-size:22px;letter-spacing:.03em;text-transform:uppercase}
+.script{font-family:"Dancing Script","Brush Script MT",cursive;font-weight:600;font-size:clamp(52px,17vw,76px);line-height:1;margin:14px 0 0;color:var(--ink)}
+.to{margin-top:14px;font-size:14px;color:var(--ink);opacity:.8}
+.star{position:absolute;fill:var(--blue);animation:tw 3s ease-in-out infinite}
+.s1{width:46px;left:18px;top:215px}.s2{width:30px;right:24px;top:30px;animation-delay:1s}.s3{width:18px;right:90px;top:330px;animation-delay:.5s;opacity:.7}
+@keyframes tw{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.25) rotate(20deg)}}
+.name{padding:34px 28px 0;position:relative}
+.name .date{text-align:right;font-weight:600;font-size:20px}
+.name h2{margin:18px 0 0;font-weight:800;font-size:clamp(46px,15vw,66px);line-height:1.02;color:var(--blue);text-transform:uppercase}
+.name .major{font-size:14px;margin-top:10px;opacity:.85}
+.cd{margin:30px 20px 0;background:var(--card);border:1.5px solid var(--line);border-radius:22px;padding:20px 12px 16px;text-align:center}
+.cd .t{font-size:13px;text-transform:uppercase;letter-spacing:.12em;opacity:.7}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.u{background:color-mix(in srgb,var(--blue) 10%,var(--bg));border-radius:14px;padding:12px 0}
+.u b{display:block;font-size:30px;font-weight:800;color:var(--blue);font-variant-numeric:tabular-nums}
+.u span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.7}
+.msg{margin-top:12px;font-weight:600;font-size:14px;min-height:20px}
+.info{display:flex;gap:16px;align-items:center;padding:30px 24px 0;flex-wrap:wrap}
+.cloud{width:180px;height:126px;padding:0 14px;background:var(--blue);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:58% 42% 55% 45%/55% 60% 40% 45%;box-shadow:0 0 0 4px var(--bg),0 0 0 5px var(--soft);flex:none}
+.cloud small{font-size:15px;font-weight:600}.cloud strong{font-size:22px;font-weight:800;white-space:nowrap}
+.place{flex:1;min-width:150px}
+.place h3{margin:0;font-size:20px;font-weight:600}
+.place p{margin:6px 0 0;font-size:14px;font-weight:600;text-transform:uppercase;line-height:1.4}
+.place .sub{font-weight:400;text-transform:none;opacity:.75;font-size:13px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:26px 20px 0}
+.btn{font:inherit;font-weight:600;font-size:14px;text-align:center;text-decoration:none;padding:14px 8px;border-radius:14px;border:1.5px solid var(--blue);color:var(--blue);background:transparent;cursor:pointer}
+.btn.p{background:var(--blue);color:#fff}
+.btn.full{grid-column:1/-1}
+.starbig{position:absolute;right:-30px;top:20px;width:150px;height:150px;opacity:.9;pointer-events:none}
+.map{margin:26px 20px 0;border-radius:18px;overflow:hidden;border:1.5px solid var(--line);background:var(--card);padding:16px;font-size:13px;line-height:1.6}
+.map b{font-size:15px}
+.band{margin-top:34px;background:var(--band);color:#fff;text-align:center;padding:30px 20px calc(30px + env(safe-area-inset-bottom,0px));font-weight:800;font-size:19px;line-height:1.5;text-transform:uppercase;position:relative}
+.band i{position:absolute;top:50%;transform:translateY(-50%);font-style:normal;font-size:22px}
+.band i:first-child{left:16px}.band i:last-child{right:16px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(30px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:99px;font-size:13px;opacity:0;transition:.3s;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.ic{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:-3px;margin-right:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{display:inline-flex;align-items:center;font-size:13px;font-weight:600;color:var(--blue);background:color-mix(in srgb,var(--blue) 10%,var(--bg));padding:7px 12px;border-radius:99px}
+.chip .ic{width:16px;height:16px;vertical-align:0}
+@media (prefers-reduced-motion:reduce){.star{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="dots"></div>
+  <div class="top"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v4L12 21l7-3.8v-4L12 17l-7-3.8z"/></svg>LỄ TỐT NGHIỆP</div>
+
+  <section class="hero">
+    <svg class="star s1" viewBox="0 0 24 24"><path d="M12 0C12.8 8 16 11.2 24 12 16 12.8 12.8 16 12 24 11.2 16 8 12.8 0 12 8 11.2 11.2 8 12 0Z"/></svg>
+    <svg class="star s2" viewBox="0 0 24 24"><path d="M12 0C12.8 8 16 11.2 24 12 16 12.8 12.8 16 12 24 11.2 16 8 12.8 0 12 8 11.2 11.2 8 12 0Z"/></svg>
+    <svg class="star s3" viewBox="0 0 24 24"><path d="M12 0C12.8 8 16 11.2 24 12 16 12.8 12.8 16 12 24 11.2 16 8 12.8 0 12 8 11.2 11.2 8 12 0Z"/></svg>
+    <div class="eyebrow">Thư mời tham dự</div>
+    <h1 class="script">Lễ Tốt Nghiệp</h1>
+    <div class="to" id="to"></div>
+  </section>
+
+  <section class="name">
+    <div class="date">01/11/2026</div>
+    <h2>Vũ Văn<br>Trường</h2>
+    <div class="chips">
+      <span class="chip"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Chủ nhật</span>
+      <span class="chip"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10:30</span>
+      
+    </div>
+  </section>
+
+  <section class="cd">
+    <div class="t" id="cdTitle">Còn lại</div>
+    <div class="grid">
+      <div class="u"><b id="d">00</b><span>Ngày</span></div>
+      <div class="u"><b id="h">00</b><span>Giờ</span></div>
+      <div class="u"><b id="m">00</b><span>Phút</span></div>
+      <div class="u"><b id="s">00</b><span>Giây</span></div>
+    </div>
+    <div class="msg" id="msg"></div>
+  </section>
+
+  <section class="info" style="position:relative">
+    <div class="cloud"><small><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Thời gian</small><strong>10H30 – 12H</strong></div>
+    <div class="place">
+      <h3><svg class="ic" viewBox="0 0 24 24" style="color:var(--blue)"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Địa điểm</h3>
+      <p>Trường Đại học Thăng Long<br><span class="sub">Hội trường Tạ Quang Bửu, Chủ nhật 01/11/2026</span></p>
+    </div>
+  </section>
+
+  <div class="btns">
+    <a class="btn p" id="cal" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Thêm vào lịch</a>
+    <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Th%C4%83ng+Long"><svg class="ic" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Chỉ đường</a>
+  </div>
+
+  <div class="map">
+    <b><svg class="ic" viewBox="0 0 24 24" style="color:var(--blue)"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>Lưu ý nhỏ</b><br>
+    Bạn đến sớm một chút để kịp chụp ảnh cùng mình nhé. Có gì cần hỗ trợ cứ nhắn mình trực tiếp!
+  </div>
+
+  <div class="band"><i>🤍</i>Sự hiện diện của bạn<br>là niềm vinh hạnh đối với mình!<i>🤍</i></div>
+</div>
+
+<script>
+(function(){
+  var START=new Date("2026-11-01T10:30:00+07:00").getTime();
+  var END=new Date("2026-11-01T12:00:00+07:00").getTime();
+  var $=function(i){return document.getElementById(i)};
+  var p=function(n){return n<10?"0"+n:""+n};
+  try{
+    var n=new URLSearchParams(location.search).get("ten");
+    if(n){$("to").textContent="Thân mời: "+n.slice(0,60)}
+  }catch(e){}
+  function tick(){
+    var now=Date.now(),diff=START-now;
+    if(now>=END){
+      $("cdTitle").textContent="Lễ đã diễn ra";
+      $("msg").textContent="Cảm ơn bạn đã đến chung vui! 💙";
+      diff=0;
+    }else if(now>=START){
+      $("cdTitle").textContent="Đang diễn ra";
+      $("msg").textContent="Hẹn gặp bạn ngay bây giờ! 🎓";
+      diff=0;
+    }else{
+      $("msg").textContent=diff<864e5?"Chỉ còn chưa đầy 1 ngày nữa thôi!":"";
+    }
+    var s=Math.floor(diff/1000);
+    $("d").textContent=p(Math.floor(s/86400));
+    $("h").textContent=p(Math.floor(s%86400/3600));
+    $("m").textContent=p(Math.floor(s%3600/60));
+    $("s").textContent=p(s%60);
+  }
+  tick();setInterval(tick,1000);
+
+  $("cal").href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent("Lễ tốt nghiệp của Vũ Văn Trường")+"&dates=20261101T103000/20261101T120000&ctz=Asia/Ho_Chi_Minh&location="+encodeURIComponent("Trường Đại học Thăng Long, Hà Nội");
+
+})();
+</script>
+</body>
+</html>
